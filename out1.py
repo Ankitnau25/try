@@ -13,7 +13,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.utils.data.dataset import Dataset
 
-class ConvRes():
+class ConvRes(nn.Module):
     def __init__(self,in_channel,out_channel,li,scaling_factor):
           super(ConvRes, self).__init__()
           self.conv1=nn.Conv2d(in_channel,16 , kernel_size=3, stride=1, padding=1)
