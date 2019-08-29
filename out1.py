@@ -223,7 +223,7 @@ if __name__ == '__main__':
         )
         
         # Evaluate
-        preds = predict(criterion
+        preds = predict(criterion,
             model=model,
             dataloader=make_test_dataloader(X_test, batch_size=args.batch_size, shuffle=False)
             
